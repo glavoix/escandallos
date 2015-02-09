@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+	    <h2> Product list</h2>
+		{% for pi in products %}
+		<p>
+    		{{ pi.product_name }}	{{ pi.product_price }} euros {{ pi.recipient_size}} {{pi.measurementtype}} - {{pi.prov_name}}
+    	</p>
+		{% endfor %}
+
+
+
+{% endblock %}
+	
